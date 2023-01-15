@@ -97,6 +97,15 @@ body{
                     .tittleData, button{
                         color: rgb(255,255,255);
                     }
+                    .tittleData{
+                        display: flex;
+                        align-items: center;
+                        & img{
+                            margin-right: 4px;
+                            width: 32px;
+                            height: 30px;
+                        }
+                    }
                     input::placeholder, textarea::placeholder{
                         color: rgb(255,255,255);
                     }
@@ -112,7 +121,7 @@ body{
                         cursor: pointer;
                     }
                     .tittleData{
-                        width: 50px;
+                        width: 80%;
                         font-size: 18px;
                     }
                     .incomeTitle{
