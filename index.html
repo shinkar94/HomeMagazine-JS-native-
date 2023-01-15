@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(scss)Домашний Журнал</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <div class="Toolbar">
+            <button class="btn btnBar"><img src="" alt=""><p>Список Доходов</p></button>
+            <button class="btn btnBar"><img src="" alt=""><p>Список Расходов</p></button>
+            <button class="btn btnBar"><img src="" alt=""><p>Журнал Категорий</p></button>
+            <button class="btn btnBar"><img src="" alt=""><p>Анализ</p></button>
+        </div>
+    </header>
+    <main>
+        <div class="infoMain btnPanel">
+            <button class="btnMenu">Send</button>
+            <button class="btnMenu">Send</button>
+            <button class="btnMenu">Send</button>
+            <button class="btnMenu">Send</button>
+        </div>
+        <div class="infoMain sendInfo">
+            <div class="Data_Info">
+                <div class="Info remainderData">
+                    <div class="tittleData title">Остаток</div>
+                    <div class="countMoney"><img src="img/flag/byn.png" alt=""><p>273</p><p class="flagName">BYN</p></div>
+                    <div class="countMoney"><img src="img/flag/usd.png" alt=""><p>104</p><p class="flagName">USD</p></div>
+                    <div class="countMoney"><img src="img/flag/eur.png" alt=""><p>98</p><p class="flagName">EUR</p></div>
+                    <div class="countMoney"><img src="img/flag/rub.png" alt=""><p>7184</p><p class="flagName">RUB</p></div>
+                </div>
+                <div class="Info remainderData">
+                    <div class="tittleData title">Карта</div>
+                    <div class="countMoney"><img src="img/flag/byn.png" alt=""><p>173</p><p class="flagName">BYN</p></div>
+                    <div class="countMoney"><img src="img/flag/usd.png" alt=""><p>104</p><p class="flagName">USD</p></div>
+                    <div class="countMoney"><img src="img/flag/eur.png" alt=""><p>98</p><p class="flagName">EUR</p></div>
+                    <div class="countMoney"><img src="img/flag/rub.png" alt=""><p>7000</p><p class="flagName">RUB</p></div>
+                </div>
+                <div class="Info remainderData">
+                    <div class="tittleData title">Наличные</div>
+                    <div class="countMoney"><img src="img/flag/byn.png" alt=""><p>100</p><p class="flagName">BYN</p></div>
+                    <div class="countMoney"><img src="img/flag/usd.png" alt=""><p>104</p><p class="flagName">USD</p></div>
+                    <div class="countMoney"><img src="img/flag/eur.png" alt=""><p>98</p><p class="flagName">EUR</p></div>
+                    <div class="countMoney"><img src="img/flag/rub.png" alt=""><p>7000</p><p class="flagName">RUB</p></div>
+                </div>
+                <div class="Info remainderData">
+                    <div class="tittleData title">Падушка</div>
+                    <div class="countMoney"><img src="img/flag/byn.png" alt=""><p>400</p><p class="flagName">BYN</p></div>
+                    <div class="countMoney"><img src="img/flag/usd.png" alt=""><p>104</p><p class="flagName">USD</p></div>
+                    <div class="countMoney"><img src="img/flag/eur.png" alt=""><p>98</p><p class="flagName">EUR</p></div>
+                    <div class="countMoney"><img src="img/flag/rub.png" alt=""><p>7000</p><p class="flagName">RUB</p></div>
+                </div>
+                <div class="Data incomeData">
+                    <div class="tittleData title">Доход</div>
+                    <input type="date" class="dateSend">
+                    <select class="opirationName">
+                        <option value="1">Зарплата(Ованс)</option>
+                        <option value="2">Зарплата</option>
+                        <option value="3">ИП</option>
+                        <option value="4">Другое</option>
+                    </select>
+                    <input type="text" class="sum" placeholder="СУММА">
+                    <textarea class="description" placeholder="Описание"></textarea>
+                    <button class="btnSend">Отправить</button> 
+                </div>
+                <div class="Data expenseData">
+                    <div class="tittleData title">Расход</div>
+                    <input type="date" class="dateSend">
+                    <select class="opirationName">
+                        <option value="1">Зарплата(Ованс)</option>
+                        <option value="2">Зарплата</option>
+                        <option value="3">ИП</option>
+                        <option value="4">Другое</option>
+                    </select>
+                    <input type="text" class="sum" placeholder="СУММА">
+                    <textarea class="description" placeholder="Описание"></textarea>
+                    <button class="btnSend">Отправить</button>
+                </div>
+                <div class="Info translationData">
+                    <div class="tittleData title">Перевод средств</div>
+                    <select class="opirationName">
+                        <option value="1">В наличные</option>
+                        <option value="2">На карту</option>
+                        <option value="3">На падушку</option>
+                        <option value="4">Долг</option>
+                    </select>
+                    <input type="text" class="sum" placeholder="СУММА">
+                    <textarea class="description" placeholder="Описание"></textarea>
+                    <button class="btnSend">Отправить</button> 
+                </div>
+            </div>
+            
+            <div class="operations">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Дата</td>
+                            <td>СУММА</td>
+                            <td>Операция</td>
+                            <td>Имя журнала учёта</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>08.01.2023</td>
+                            <td>1000</td>
+                            <td>Доход</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>08.01.2023</td>
+                            <td>500</td>
+                            <td>Расход</td>
+                            <td>Авто</td>
+                        </tr>
+                    </tbody>
+                    
+                    
+                    
+                </table>
+            </div>
+        </div>
+        <div class="infoMain bdInfo">
+            <div class="itemBd">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, ipsa. Cum voluptas accusamus, consequatur veniam harum, facilis, quaerat neque inventore vero sint sed corrupti provident.</p>
+            </div>
+            <div class="itemBd">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, ipsa. Cum voluptas accusamus, consequatur veniam harum, facilis, quaerat neque inventore vero sint sed corrupti provident.</p>
+            </div>
+            <div class="itemBd">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, ipsa. Cum voluptas accusamus, consequatur veniam harum, facilis, quaerat neque inventore vero sint sed corrupti provident.</p>
+            </div>
+            <div class="itemBd">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, ipsa. Cum voluptas accusamus, consequatur veniam harum, facilis, quaerat neque inventore vero sint sed corrupti provident.</p>
+            </div>
+        </div>
+        
+    </main>
+
+    <script type="module" src="js/index.js"></script>
+</body>
+</html>
