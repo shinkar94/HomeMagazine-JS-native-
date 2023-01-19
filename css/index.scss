@@ -98,11 +98,11 @@ body{
             border-radius: 5px;
             padding: 5px;
             width: 70%;
-            .Data_Info, .Infos_Panel, .translationPanel{
+            .Data_Info, .Infos_Panel{
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: left;
-                .Data, .Info, .translationData{
+                justify-content: center;
+                .Data, .Info{
                     display: flex;
                     flex-wrap: wrap;
                     flex-direction: column;
@@ -198,10 +198,6 @@ body{
                     .expenseData{
                         background-color: rgba(173, 0, 0, 0.301);
                     }
-                }
-            }
-            .containerTranslation{
-                .translationPanel{
                     .translationData{
                         background: linear-gradient(45deg, rgba(255, 0, 0, 0.3) 0%, rgba(0, 128, 0, 0.3) 100%);
                     }
