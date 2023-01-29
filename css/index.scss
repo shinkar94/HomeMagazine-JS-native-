@@ -4,9 +4,9 @@ body{
     padding: 0%;
     margin: 0%;
     border: 0;
-    background-color: rgb(75, 75, 75);
+    background-color: rgb(14,145,215);
 
-    --backgroundBlock: rgb(75, 75, 75);
+    --backgroundBlock: rgb(29,34,74);
     --backgroundBtnHover: linear-gradient(225deg, #520000, #450000);;
     --bkgActBtnHov: rgba(0, 72, 179, 0.411);
     
@@ -18,11 +18,11 @@ body{
 
     --gradBack: linear-gradient(145deg, #444444, #505050);
     --gradBack2: linear-gradient(145deg, #505050, #444444);
-    --shadowIns: inset 5px 5px 10px #404040,
-    inset -5px -5px 10px #565656;
+    // --shadowIns: inset 5px 5px 10px #404040,
+    // inset -5px -5px 10px #565656;
     
-    --shadowInsInput: inset 2px 2px 5px #404040,
-    inset -2px -2px 5px #565656;
+    // --shadowInsInput: inset 2px 2px 5px #404040,
+    // inset -2px -2px 5px #565656;
 
     --shadowInsBorder: 5px 5px 10px #2b2a2a,
     -5px -5px 10px #565656;
@@ -31,57 +31,79 @@ body{
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
-            padding: 10px;
+            padding: 10px 10px 0px 10px;
+            & a{
+                display: flex;
+                align-items: center;
+                width: 20%;
+                height: 80px;
+                background: var(--backgroundBlock);
+                border-radius: 10px 0px 0px 0px;
+                text-decoration: none;
+                & p{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: 10%;
+                    color: rgb(215,215,215);
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    background: rgb(251,43,93);
+                    font-size: 26px;
+                    font-weight: bold;
+                    .s1, .s2{
+                        text-shadow: 0px 1px rgb(0,0,0);
+                    }
+                    .s1{transform: translateY(-25%);}
+                    .s2{transform: translateY(25%);}
+                    box-shadow: 2px 2px 2px rgb(0,0,0),
+                    -2px -2px 2px rgb(215,215,215),
+                    inset 2px 2px 2px rgba(255, 255, 255, 0.322),
+                    inset -2px -2px 2px rgba(0, 0, 0, 0.322);
+                }
+            }
             .btn{
                 position: relative;
                 overflow: hidden;
                 height: 80px;
-                width: 25%;
+                width: 20%;
                 cursor: pointer;
                 border: 0;
                 background: var(--backgroundBlock);
                 box-shadow: var(--shadowIns);
+                color: rgb(215,215,215);
                 & p{
                     font-size: 22px;
                     font-family: JetBrains;
                     margin: 4px;
-                    text-align: left;
+                    text-align: center;
                 }
-                
                 & img{
                     position: absolute;
-                    top: 100px;
-                    left: 10px;
-                    width: 32px;
+                    left: 0%;
+                    top: 0%;
+                    width: 80px;
                 }
+
                 &:hover{
-                    color: rgb(255, 255, 255);
-                    background: var(--tdBack);
+                    border: 2px outset rgb(255,144,16);
+                    color: rgb(255,144,16);
                 }
-                &:hover img{
-                    transition: all 0.5s ease-out; 
-                   top: 20px;
-                }
-                &:hover p{
-                    transition: all 0.5s ease-out;
-                    margin-left: 42px;
-                }
+            }
+            .btnBar4{
+                border-radius: 0px 10px 0px 0px;
             }
         }
     }
     main{
         display: flex;
         justify-content: space-between;
-        box-shadow: var(--btnColShad);
+        // box-shadow: var(--btnColShad);
         padding: 10px;
         margin: 0px 10px;
-        border-radius: 10px;
+        border-radius: 0px 0px 10px 10px;
         background-color: var(--backgroundBlock);
-        .btnPanel, .bdInfo{
-            max-width: 15%;
-            // box-shadow: var(--btnColShad);
-            border-radius: 5px;
-        }
         .btnPanel{
             padding: 5px 0px 0px 0px;
             text-align: center;
@@ -92,18 +114,22 @@ body{
                 border: 0;
                 margin-bottom: 4px;
                 cursor: pointer;
-                box-shadow:  -1px 1px 5px #404040,
-                            1px -1px 5px #565656,
-                            0 0 0 2px #323232;
+                box-shadow: 0 0 0 2px rgb(113,29,79);
                 background: var(--backgroundBlock);
+                font-size: 24px;
+                color: rgb(215, 215, 215);
+                transition: 0.3s;
                 &:hover{
-                    background-color: var(--bkgActBtnHov);
-                    color: rgb(250,250,250);
+                    background: linear-gradient(-45deg, rgb(44,46,146), rgb(94,32,139));
+                    text-shadow: 0px 0px 20px rgb(197, 120, 31);
+                    color: rgb(255,144,16);
+                    box-shadow: 0 0 0 2px rgb(255,144,16);
                 }
             }
         }
         .infoMain{
-            background: var(--backgroundBlock);
+            // background: var(--backgroundBlock);
+            background: rgb(22,29,75);
             box-shadow: var(--shadowIns);
             border-radius: 5px;
             padding: 5px;
@@ -121,8 +147,8 @@ body{
                     border-radius: 10px;
                     padding: 5px;
                     margin: 10px;
-                    background: var(--gradBack2);
-                    box-shadow: var(--shadowInsBorder);
+                    background: linear-gradient(135deg ,rgb(40,44,82), rgb(24,34,70));
+                    box-shadow: 5px 5px 10px 2px rgb(0,0,0),-1px -1px 1px rgb(219, 219, 219);
                     .tittleData, input, select, textarea,button{
                         width: 90%;
                         height: 20px;
@@ -131,7 +157,9 @@ body{
                         border: 0;
                         padding: 4px;
                         border-radius: 4px;
-                        box-shadow: var(--shadowInsInput);
+                        box-shadow: inset 0px 0px 2px 1px rgb(0,0,0, 0.3),
+                        inset 0px 0px 4px 2px rgba(0, 0, 0, 0.3),
+                        inset 0px 0px 8px 4px rgb(0,0,0, 0.3);
                         background: var(--backgroundBlock);
                         color: rgb(215, 215, 215);
                         font-weight: bold;
@@ -213,7 +241,7 @@ body{
                                 margin-right: 4px;
                             }
                             & p{
-                                color: rgba(212, 216, 0, 0.897);
+                                color: rgb(215,215,215);
                                 font-size: 34px;
                                 text-shadow: 0px 1px rgb(0,0,0);
                                 margin: 0%; 
@@ -342,8 +370,17 @@ body{
             .itemBd{
                 padding: 5px;
                 border-radius: 5px;
-                box-shadow: var(--btnColShad);
+                // box-shadow: var(--btnColShad);
             }
+        }
+        .btnPanel, .bdInfo{
+            max-width: 15%;
+            border-radius: 5px;
+            background-color: var(--backgroundBlock);
+        }
+        .sendInfo{
+            box-shadow: -5px 10px 10px 10px rgb(13,26,61),
+            inset 20px 0px 30px 20px rgb(13,26,61);
         }
     }
 }
